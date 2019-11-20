@@ -3,7 +3,7 @@
         <!--        切换图片   利用三目用算-->
         <router-link to="/main/home"><span class="icon iconfont icon-index"><img :src="'/main/home'===$route.path ? Img[0].selected : Img[0].normal"></span>首页</router-link>
         <router-link to="/main/chengQ"><span class="icon iconfont icon-index" ><img :src="'/main/chengQ'===$route.path ? Img[1].selected : Img[1].normal"></span>橙圈</router-link>
-        <router-link to="/main/findsingle"><span class="icon iconfont icon-index"><img :src="'/main/findsingle'===$route.path ? Img[2].selected : Img[2].normal"></span>找单品</router-link>
+        <router-link to="/main/findsingle"><span class="icon iconfont icon-index"><img :src="'/main/findsingle'===$route.path ? Img[2].selected : Img[2].normal"></span>购物车</router-link>
         <router-link to="/main/mine"><span class="icon iconfont icon-index"><img :src="'/main/mine'===$route.path ? Img[3].selected : Img[3].normal"></span>我的</router-link>
     </div>
 </template>

@@ -1,8 +1,8 @@
 <template>
     <div class="swiper-container y_swiper" >
         <div class="btn">
-            <input type="text" class="swiper-button-prev y-swiper-button-prev y-swiper-button" readonly value="分类">
-            <input type="text" class="swiper-button-next y-swiper-button-next y-swiper-button" readonly value="品牌">
+            <input type="text" class="swiper-button-prev y-swiper-button-prev y-swiper-button" value="分类">
+            <input type="text" class="swiper-button-next y-swiper-button-next y-swiper-button" value="品牌">
         </div>
 <!--        <div class="swiper-pagination one"></div>-->
         <div class="swiper-wrapper y_swiper-wrapper">
@@ -11,7 +11,7 @@
                 <y-classify></y-classify>
             </div>
             <div class="swiper-slide box2"  >
-                <y-brand></y-brand>
+                推荐
             </div>
 
         </div>
@@ -28,13 +28,13 @@
 <script>
     // eslint-disable-next-line no-undef
     import Swiper from "swiper";
+
     import y_classify from "./y_classify";
-    import y_brand from "./y_brand";
+
     export default {
         name: "content_banner",
         components:{
-            'y-classify':y_classify,
-            'y-brand':y_brand
+            'y-classify':y_classify
         },
         props:['data'],
         mounted() {
@@ -103,7 +103,6 @@
     border-bottom: 2px solid white;
     outline: none;
     color: black;
-
 }
 .y-swiper-button-prev{
     left: 0;

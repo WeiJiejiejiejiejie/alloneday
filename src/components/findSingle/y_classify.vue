@@ -29,13 +29,12 @@
     }
     .adv_boss{
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         flex-wrap: wrap;
     }
 .adv{
     display:inline-block;
     width: 1.85rem;
-    margin-top: 0.03rem;
     /*min-height: 1.04rem;*/
 }
 .adv img{
